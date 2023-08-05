@@ -1,7 +1,7 @@
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-DATA_URL = 'https://kuleuven-mda.s3.eu-central-1.amazonaws.com/water_points.csv'
+#DATA_URL = 'https://kuleuven-mda.s3.eu-central-1.amazonaws.com/water_points.csv'
 
 TEXTS = {
     'title': '**Wonders: Community Activities**',
@@ -12,7 +12,7 @@ TEXTS = {
             particularly among vulnerable populations."
 }
 
-def get_water_point_map(water_points, id_=82198):
+def get_the_line_plot(water_points, id_=82198):
     ### Extract the information from the id_ above and store it in a dictionary
     info = water_points[water_points.id == id_].to_dict(orient='records')[0]
 
@@ -24,7 +24,7 @@ def get_water_point_map(water_points, id_=82198):
     # - Explore the specs parameter and provide it with the correct values such that it allows both scattergeo and xy plots.
 
     fig = make_subplots(rows=2, cols=1, 
-                        specs=[[{'type': 'scattergeo'}],
+                        specs=[[{'type': 'scatter'}],
                                [{'type': 'scattergeo'}]],
                     subplot_titles=("", ""))
 
