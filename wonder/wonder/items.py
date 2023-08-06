@@ -24,3 +24,9 @@ class WonderItem(scrapy.Item):
     createdAt=scrapy.Field()
     dueDate=scrapy.Field()
     skills=scrapy.Field()
+class seperateItem(scrapy.Item):
+    thread=scrapy.Field()
+    rewards=scrapy.Field()
+    id=scrapy.Field()
+ 
+ 

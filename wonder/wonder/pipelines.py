@@ -113,3 +113,70 @@ class WonderPipeline:
         ## Close cursor & connection to database 
         self.cur.close()
         self.connection.close()
+
+
+
+
+class additionPipeline:
+
+    def __init__(self):
+        ## Connection Details
+        hostname = 'localhost'
+        username = 'postgres'
+        password = 'Xw21872802?'
+        database = 'wonders'
+
+        ## Create/Connect to database
+        self.connection = psycopg2.connect(host=hostname, user=username, password=password, dbname=database)
+        
+        ## Create cursor, used to execute commands
+        self.cur = self.connection.cursor()
+        
+        ## Create quotes table if none exists
+        self.cur.execute("""CREATE TABLE IF NOT EXISTS Wonder_additions(
+            id text, 
+            rewards text,
+            thread  text
+        )
+        """)
+  
+
+
+
+
+
+
+
+
+
+    def process_item(self, item, spider):
+
+        ## Define insert statement
+        self.cur.execute("select * from Wonder_additions where id= %s", (item['id'],))
+        result = self.cur.fetchone()
+
+        ## If it is in DB, create log message
+        if result:
+            spider.logger.warn("Item already in database: %s" % item['id'])
+
+
+        ## If text isn't in the DB, insert data
+        else:
+          self.cur.execute(""" insert into Wonder_additions(id, 
+            rewards,
+            thread) values (%s,%s,%s)""",(
+            str(item["id"]),
+            str(item["rewards"]),
+            str(item["thread"])
+
+        ))
+
+        ## Execute insert of data into database
+          self.connection.commit()
+          return item
+
+    def close_spider(self, spider):
+
+        ## Close cursor & connection to database 
+        self.cur.close()
+        self.connection.close()

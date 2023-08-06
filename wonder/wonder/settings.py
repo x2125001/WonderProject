@@ -20,7 +20,7 @@ NEWSPIDER_MODULE = "wonder.spiders"
 ROBOTSTXT_OBEY = False
 USER_AGENT= 'Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-CONCURRENT_REQUESTS = 16
+CONCURRENT_REQUESTS = 100
 REACTOR_THREADPOOL_MAXSIZE = 20
 LOG_LEVEL = "INFO"
 COOKIES_ENABLED = False
@@ -69,7 +69,7 @@ DOWNLOAD_DELAY = 2
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   "wonder.pipelines.WonderPipeline": 300,
+   "wonder.pipelines.additionPipeline": 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
