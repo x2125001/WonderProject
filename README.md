@@ -4,8 +4,7 @@
   <img src="https://dework.xyz/board.jpeg" />
 </p>
 <h1 align="center">## Description </h1>
-
-In this Project, thousands of tasks from Dework, the web3-platform are scrapped and analyzed. Specifically, data extraction, ingestion, cleaning & wrangling, visualization, and bounty regression are implemented.
+In this Project, thousands of tasks from Dework, the web3-platform are scrapped and analyzed. Specifically, data extraction, ingestion, cleaning & wrangling, KPI analysis, visualization,topic modelling,and bounty regression are implemented.
 
 <p align="center">
   <img width="700" align="center" src="https://user-images.githubusercontent.com/9840435/60266022-72a82400-98e7-11e9-9958-f9004c2f97e1.gif" alt="demo"/>
