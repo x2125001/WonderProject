@@ -18,34 +18,16 @@ The results of topic modelling, using the LDA from gensim package will have the 
 <p align="center">
   <img src="https://github.com/x2125001/WonderProject/blob/93c36db8fa9a284ac16db6278a8c75b5de6669aa/e.PNG" />
 </p>
-Example of `package.json` with good meta data:
 
-```json
-// The package.json is not required to run README-MD-GENERATOR
-{
-  "name": "readme-md-generator",
-  "version": "0.1.3",
-  "description": "CLI that generates beautiful README.md files.",
-  "author": "Franck Abgrall",
-  "license": "MIT",
-  "homepage": "https://github.com/kefranabg/readme-md-generator#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kefranabg/readme-md-generator.git"
-  },
-  "bugs": {
-    "url": "https://github.com/kefranabg/readme-md-generator/issues"
-  },
-  "engines": {
-    "npm": ">=5.5.0",
-    "node": ">=9.3.0"
-  }
-}
-```
 
-## 🚀 Usage
+## 🚀 Bounty Regression
 
-Make sure you have [npx](https://www.npmjs.com/package/npx) installed (`npx` is shipped by default since npm `5.2.0`)
+Using the features of dao, priority, status, and tf-idf from the task description, the models of random forest, GradientBoostingRegressor,Ridge Model,KNeighborsRegressor,XGBRegressor, StackingRegressor are fit. The MSE evaluation metric is used, and the achieved average score is 87%. 
+Bagging and Boosting in general have better performance than other algorithms.
+
+Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
 
 Just run the following command at the root of your project and answer questions:
 
