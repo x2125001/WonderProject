@@ -23,11 +23,10 @@ The results of topic modelling, using the LDA from gensim package will have the 
 ## 🚀 Bounty Regression
 
 Using the features of dao, priority, status, and tf-idf from the task description, the models of random forest, GradientBoostingRegressor,Ridge Model,KNeighborsRegressor,XGBRegressor, StackingRegressor are fit. The MSE evaluation metric is used, and the achieved average score is 87%. 
-Bagging and Boosting in general have better performance than other algorithms.
-
-Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
+Bagging and Boosting in general have better performance than other algorithms
+Fitted models | boosting_regressor | RandomForest | KNeighborsRegressor | StackingRegressor | Ridge | xgb
 --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
-Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+MSE | 0.8721 | 0.881 | 0.8103 | 0.8742 | 0.8410 | 0.8742
 
 Just run the following command at the root of your project and answer questions:
 
