@@ -7,7 +7,7 @@
 In this Project, thousands of tasks from Dework, the web3-platform are scrapped and analyzed. Specifically, data extraction, ingestion, cleaning & wrangling, KPI analysis, visualization, topic modeling, and bounty regression are implemented.
 
 <p align="center">
-  <img width="700" align="center" src="https://user-images.githubusercontent.com/9840435/60266022-72a82400-98e7-11e9-9958-f9004c2f97e1.gif" alt="demo"/>
+  <img width="700" align="center" src="https://github.com/x2125001/WonderProject/blob/ded30c226587e175117bb6b3509c5ca9d72e02c8/aa.png" alt="demo"/>
 </p>
 
 Generated `README.md`:
