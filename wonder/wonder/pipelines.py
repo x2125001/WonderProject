@@ -7,6 +7,22 @@
 # useful for handling different item types with a single interface
 import psycopg2
 
+
+from itemadapter import ItemAdapter
+
+
+class NPipeline:
+    def process_item(self, item, spider):
+        return item
+
+
+
+
+
+
+
+
+
 class WonderPipeline:
 
     def __init__(self):

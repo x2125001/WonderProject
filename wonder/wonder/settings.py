@@ -69,7 +69,7 @@ DOWNLOAD_DELAY = 2
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   "wonder.pipelines.additionPipeline": 300,
+   "wonder.pipelines.NPipeline": 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

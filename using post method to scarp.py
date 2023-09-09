@@ -9,40 +9,40 @@ from sqlalchemy import create_engine
 from tqdm import tqdm
 
 def get_data(data):
-      try:assignees='|'.join([i['username'] for i in data['data']['task']['assignees']])
-      except: assignees=None 
-      try: comments=[i['content'] for i in data['data']['task']['thread']['messages']]
-      except:comments=None
-      try:tags=[i['label'] for i in data['data']['task']['tags']]
-      except:tags=None
-      try: rewards=float(data['data']['task']['rewards'][0]['amount'])*data['data']['task']['rewards'][0]['token']['usdPrice']
+      #try:assignees='|'.join([i['username'] for i in data['data']['task']['assignees']])
+      #except: assignees=None 
+      #try: comments=[i['content'] for i in data['data']['task']['thread']['messages']]
+      #except:comments=None
+      #try:tags=[i['label'] for i in data['data']['task']['tags']]
+      #except:tags=None
+      try: rewards=data['data']['task']['rewards'][0]['token']['usdPrice']
       except:rewards=None
-      if data['data']['task']['status'] not in ['BACKLOG','COMMUNITY_SUGGESTIONS']:
-         dic={
+      dic={
            'id': str(data['data']['task']['id']),
-           'name': str(data['data']['task']['name']),
-           'description':str(data['data']['task']['description']),
-           'organiazation':str(data['data']['task']['workspace']['organization']['name']),
-           'createdAt':str(data['data']['task']['createdAt']),
-           'creator':str(data['data']['task']['creator']['username']),
-           'audit_log':str(data['data']['task']['auditLog']),
-           'due_date': str(data['data']['task']['dueDate']),
-           'assignees':assignees,
-           'subtasks': str(data['data']['task']['subtasks']),
-           'priority':str(data['data']['task']['priority']),
-           'status':str(data['data']['task']['status']),
-           'tags':str(tags),
+           #'name': str(data['data']['task']['name']),
+           #'description':str(data['data']['task']['description']),
+           #'organiazation':str(data['data']['task']['workspace']['organization']['name']),
+           #'createdAt':str(data['data']['task']['createdAt']),
+           #'creator':str(data['data']['task']['creator']['username']),
+           #'audit_log':str(data['data']['task']['auditLog']),
+           #'due_date': str(data['data']['task']['dueDate']),
+           #'assignees':assignees,
+           #'subtasks': str(data['data']['task']['subtasks']),
+           #'priority':str(data['data']['task']['priority']),
+           #'status':str(data['data']['task']['status']),
+           #'tags':str(tags),
            'review':str(data['data']['task']['review']),
-           'permalink':str(data['data']['task']['permalink']),
-           'rewards':rewards,
-           'doneAt':str(data['data']['task']['doneAt']),
-           'comments':str(comments)}
-         return dic
+           #'permalink':str(data['data']['task']['permalink']),
+           #'rewards':rewards,
+           #'doneAt':str(data['data']['task']['doneAt']),
+           #'comments':str(comments)}
+         }
+      return dic
 def load_data(data):
     engine = create_engine("postgresql+psycopg2://postgres:Xw21872802?@localhost/wonders")
     df=pd.DataFrame.from_records([data])
     with engine.begin() as connection:
-        df.to_sql('abc', con=connection, if_exists='append')
+        df.to_sql('d', con=connection, if_exists='append')
     print('done')
 
 def fetch_org_ids():
