@@ -10,7 +10,7 @@ For Visualization please run the following command under the directory of streml
 ```sh
 streamlit run KPIs.py
 ```
-
+<a><img src="https://github.com/x2125001/WonderProject/blob/1070631df9a564a6f674a655367716b484226610/pp.png" /></a>
 
 
 
@@ -66,7 +66,7 @@ You can find [ejs README template examples here](https://github.com/kefranabg/re
 ## Code Contributors
 
 This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
-<a href="https://github.com/kefranabg/readme-md-generator/graphs/contributors"><img src="https://opencollective.com/readme-md-generator/contributors.svg?width=890&button=false" /></a>
+<a href="https://github.com/kefranabg/readme-md-generator/graphs/contributors"><img src="https://github.com/x2125001/WonderProject/blob/1070631df9a564a6f674a655367716b484226610/pp.png" /></a>
 
 ## Financial Contributors
 
