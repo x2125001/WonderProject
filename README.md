@@ -10,8 +10,9 @@ For Visualization please run the following command under the directory of streml
 ```sh
 streamlit run KPIs.py
 ```
-<a><img src="https://github.com/x2125001/WonderProject/blob/1070631df9a564a6f674a655367716b484226610/pp.png" /></a>
-
+<p align="center">
+  <img src="https://github.com/x2125001/WonderProject/blob/1070631df9a564a6f674a655367716b484226610/pp.png" />
+</p>
 
 
 Example of `package.json` with good meta data:
