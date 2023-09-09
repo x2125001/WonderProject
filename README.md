@@ -5,7 +5,6 @@
 </p>
 <h1 align="center">## Description </h1>
 In this Project, thousands of tasks from Dework, the web3-platform are scrapped and analyzed. Specifically, data extraction, ingestion, cleaning & wrangling, KPI analysis, visualization, topic modeling, and bounty regression are implemented.
-For Visualization please run the following command under the directory of stremlite:
 
 ```sh
 streamlit run KPIs.py
@@ -13,8 +12,10 @@ streamlit run KPIs.py
 <p align="center">
   <img src="https://github.com/x2125001/WonderProject/blob/1070631df9a564a6f674a655367716b484226610/pp.png" />
 </p>
-
-
+For Visualization please run the following command under the directory of stremlite:
+<p align="center">
+  <img src="https://github.com/x2125001/WonderProject/blob/93c36db8fa9a284ac16db6278a8c75b5de6669aa/e.PNG" />
+</p>
 Example of `package.json` with good meta data:
 
 ```json
