@@ -29,8 +29,7 @@ Fitted models | boosting_regressor | RandomForest | KNeighborsRegressor | Stacki
 --- | --- | --- | --- |--- |--- |--- 
 MSE | 0.8721 | 0.881 | 0.8103 | 0.8742 | 0.8410 | 0.8742
 
-The best model saved from the random-forest is deployed using the fastapi
-Just run the following command at the root of your project and answer questions:
+The best model saved from the random-forest is deployed using the fastapi, which is then integrated into the streamlit 
 
 ```sh
 npx readme-md-generator
