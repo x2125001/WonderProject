@@ -1,9 +1,9 @@
 # WonderProject
-<h1 align="center">Welcome to the Wonder project 👋</h1>
+<h1 align="center">Welcome to the Wonder Project 👋</h1>
 <p align="center">
   <img src="https://dework.xyz/board.jpeg" />
-  <a href="https://www.npmjs.com/package/readme-md-generator">
-    <img alt="downloads" src="https://img.shields.io/npm/dm/readme-md-generator.svg?color=blue" target="_blank" />
+  <a>
+     In this project, the web3-platform Dework's tasks are scrapped and analyzed
   </a>
   <a href="https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE">
     <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
