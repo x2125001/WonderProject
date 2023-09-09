@@ -24,8 +24,9 @@ The results of topic modelling, using the LDA from gensim package will have the 
 
 Using the features of dao, priority, status, and tf-idf from the task description, the models of random forest, GradientBoostingRegressor,Ridge Model,KNeighborsRegressor,XGBRegressor, StackingRegressor are fit. The MSE evaluation metric is used, and the achieved average score is 87%. 
 Bagging and Boosting in general have better performance than other algorithms
+
 Fitted models | boosting_regressor | RandomForest | KNeighborsRegressor | StackingRegressor | Ridge | xgb
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+--- | --- | --- | --- |--- |--- |--- 
 MSE | 0.8721 | 0.881 | 0.8103 | 0.8742 | 0.8410 | 0.8742
 
 Just run the following command at the root of your project and answer questions:
