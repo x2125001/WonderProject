@@ -20,7 +20,7 @@ The results of topic modelling, using the LDA from gensim package will have the 
 </p>
 
 
-## 🚀 Bounty Regression
+🚀 Bounty Regression
 
 Using the features of dao, priority, status, tf-idf text features from the task description, and time_to_due, the models of random forest, GradientBoostingRegressor,Ridge Model,KNeighborsRegressor,XGBRegressor, StackingRegressor are fit. The MSE evaluation metric is used, and the achieved average score is 23%. 
 
