@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://dework.xyz/board.jpeg" />
 </p>
-<h1 align="center">## Description </h1>
+<h1 align="center">Description </h1>
 In this Project, thousands of tasks from Dework, the web3-platform are scrapped and analyzed. Specifically, data extraction, ingestion, cleaning & wrangling, KPI analysis, visualization, topic modeling, and bounty regression are implemented.
 For Visualization please run the following command under the directory of stremlite:
 
