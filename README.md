@@ -21,6 +21,8 @@ The results of topic modelling, using the LDA from gensim package will have the 
 
 
 🚀 Bounty Regression
+
+
 On top of the features of dao, priority, task status, all categorical, the text features from the task description are added. Feature engineering is implemented. Here specifically, the sentence embedding model is utilized and numerical features are extracted per sentence. Then the PCA dimensional reduction is implemented. Notice that the PCA was fitted on the training data only then used to transform the test feature embeddings. This restriction is necessary to avoid the 'cheating' and so to really test the model out. 
 The below table reports the R-square metric each for the models trained. StackingRegressor is trained as an ensemble of all other models, namely Knn,Ridge, SVM, xgb,and randomforest. 
 
