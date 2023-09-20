@@ -22,17 +22,15 @@ The results of topic modelling, using the LDA from gensim package will have the 
 
 🚀 Bounty Regression
 On top of the features of dao, priority, task status, all categorical, the text features from the task description are added. Feature engineering is implemented. Here specifically, the sentence embedding model is utilized and numerical features are extracted per sentence. Then the PCA dimensional reduction is implemented. Notice that the PCA was fitted on the training data only then used to transform the test feature embeddings. This restriction is necessary to avoid the 'cheating' and so to really test the model out. 
-
-
-Using the features of dao, priority, status, tf-idf text features from the task description, and time_to_due, the models of random forest, GradientBoostingRegressor,Ridge Model,KNeighborsRegressor,XGBRegressor, StackingRegressor are fit. The MSE evaluation metric is used, and the achieved average score is 23%. 
+The below table reports the R-square metric each for the models trained. StackingRegressor is trained as an ensemble of all other models, namely Knn,Ridge, SVM, xgb,and randomforest. 
 
 Fitted models | boosting_regressor | RandomForest | KNeighborsRegressor | StackingRegressor | Ridge | xgb
 --- | --- | --- | --- |--- |--- |--- 
 R-square |  | 0.234 | 0.3086 | 0.3587 | 0.1540 | 0.2134
 
-The best model saved from the  KNeighbors is deployed using the fastapi, which is then integrated into the streamlit in the page of Bounty Regression, where the user can specify the levels of task priority and task status and then get the model predicted average bounty
+The best model saved from the  stackingRegressor is deployed using the fast API, which is then integrated into the streamlit in the page of Bounty Regression, where the user can specify the levels of task priority and task status and then get the model predicted average bounty
 
-Here 
+Thanks very much for the interests.
 
 
 
