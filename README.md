@@ -26,7 +26,7 @@ Using the features of dao, priority, status, tf-idf text features from the task 
 
 Fitted models | boosting_regressor | RandomForest | KNeighborsRegressor | StackingRegressor | Ridge | xgb
 --- | --- | --- | --- |--- |--- |--- 
-MSE | 0.144 | 0.163 | 0.3086 | 0.2104 | 0.1540 | 0.2134
+R-square |  | 0.234 | 0.3086 | 0.3587 | 0.1540 | 0.2134
 
 The best model saved from the  KNeighbors is deployed using the fastapi, which is then integrated into the streamlit 
 
