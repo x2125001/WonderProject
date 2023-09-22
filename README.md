@@ -25,7 +25,7 @@ The below table reports the R-square metric each for the models trained. Stackin
 
 Fitted models | boosting_regressor | RandomForest | KNeighborsRegressor | StackingRegressor | Ridge | xgb
 --- | --- | --- | --- |--- |--- |--- 
-R-square |  | 0.234 | 0.3086 | 0.3587 | 0.1540 | 0.2134
+R-square | 0.287 | 0.234 | 0.3086 | 0.3587 | 0.1540 | 0.2134
 
 The best model saved from the  stackingRegressor is deployed using the fast API, which is then integrated into the streamlit in the page of Bounty Regression, where the user can specify the levels of task priority and task status and then get the model predicted average bounty
 
